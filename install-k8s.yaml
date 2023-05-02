@@ -3,5 +3,4 @@
   hosts: k8s_groups
   tasks:
   - name: install k8s
-    shell: |
-      "curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64  "
+    shell: "curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64  "
