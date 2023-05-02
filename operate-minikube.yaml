@@ -3,8 +3,8 @@
   hosts: k8s_groups
   tasks:
   - name: start minikube
-    shell: "minikube start"
+    shell: "minikube start --driver=none"
     when: action=="start_minikube"
   - name: stop minikube
     shell: "minikube stop"
-    when: action=="start_minikube"
+    when: action=="stop_minikube"
