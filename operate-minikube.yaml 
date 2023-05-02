@@ -1,0 +1,10 @@
+---
+- name: operate minikube
+  hosts: k8s_groups
+  tasks:
+  - name: start minikube
+    shell: "minikube start"
+    when: action=="start_minikube"
+  - name: stop minikube
+    shell: "minikube stop"
+    when: action=="start_minikube"
