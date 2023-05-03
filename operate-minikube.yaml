@@ -3,7 +3,7 @@
   hosts: k8s_groups
   tasks:
   - name: start minikube
-    shell: "minikube start --driver=docker --force"
+    shell: "minikube start --driver=none"
     when: action=="start_minikube"
   - name: stop minikube
     shell: "minikube stop"
